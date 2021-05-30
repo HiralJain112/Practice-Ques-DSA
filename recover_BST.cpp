@@ -56,6 +56,7 @@ void recoverBST( struct node* root )
 
 	if( first && last )
 		swap( &(first->data), &(last->data) );
+		
 	else if( first && middle )
 		swap( &(first->data), &(middle->data) );
 
@@ -78,6 +79,8 @@ int main()
 	root->left->left = newNode(2);
 	root->left->right = newNode(20);
 
+    inorder(root);
+	cout<<endl;
 	recoverBST(root);
 
 	inorder(root);
