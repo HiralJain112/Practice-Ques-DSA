@@ -25,6 +25,6 @@ int main()
     }
     int key;
     cin>>key;
-    cout<<LinearSearch(arr, n, key);
+    cout<<LinearSearch(arr, n,  key);
     return 0;
 }
